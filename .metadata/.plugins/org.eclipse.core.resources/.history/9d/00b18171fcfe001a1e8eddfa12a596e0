@@ -1,0 +1,60 @@
+package school.management.system;
+
+//Create by Niranjan Malya on 24/09/2020 This Class will Keep Track of all the Student Activities
+public class Student {
+	private int id;
+	private String name;
+	private int grade;
+	private int feesPaid;
+	private int feesTotal;
+	
+//	constructor for Student Class
+	public Student(int id, String name, int grade) {
+		this.id = id;
+		this.name = name;
+		this.grade = grade;
+		this.feesPaid = 0;
+		this.feesTotal = 30000; 
+	}
+	
+//	getter for Student ID
+	public int getId() {
+		return id;
+	}
+	
+//	setter and setter method for name
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+//	setter and setter method for grade
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+	
+	public int getGrade() {
+		return grade;
+	}
+	
+//	setter method for fees paid
+	public void setFeesPaid(int fees) {
+		this.feesPaid += fees;
+	}
+	
+	public int getFeesPaid() {
+		return feesPaid;
+	}
+	
+//	setter method for total fees
+	public void setTotalFees(int totalfees) {
+		this.feesTotal = totalfees;
+	}
+	
+	public int getTotalFees() {
+		return feesTotal;
+	}
+}

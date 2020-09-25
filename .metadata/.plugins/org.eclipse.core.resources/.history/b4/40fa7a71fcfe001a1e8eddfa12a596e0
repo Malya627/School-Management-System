@@ -1,0 +1,40 @@
+package school.management.system;
+
+public class Teacher {
+	private int id;
+	private String name;
+	private int salary;
+	
+	public Teacher(int id, String name, int salary) {
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	
+//	getter and setter for Teacher Name
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+//	getter for id
+	public int getId() {
+		return id;
+	}
+	
+//getter and Setter and Increment for Salary
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	
+	public int getSalary() {
+		return salary;
+	}
+	
+	public void salaryIncrement(int salary) {
+		this.salary += salary;
+	}
+}
